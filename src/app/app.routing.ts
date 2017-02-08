@@ -6,6 +6,7 @@ import {BlogComponent} from "./pages/blog/blog.component";
 import {ContactComponent} from "./pages/contact/contact.component";
 import {PortfolioComponent} from "./pages/portfolio/portfolio.component";
 import {ServicesPageComponent} from "./pages/services-page/services-page.component";
+import {FormulaireComponent} from "./pages/formulaire/formulaire.component";
 
 
 const appRoutes: Routes = [
@@ -32,6 +33,11 @@ const appRoutes: Routes = [
   {
     path: 'services',
     component:ServicesPageComponent
+  }
+  ,
+  {
+    path: 'formulaire',
+    component:FormulaireComponent
   }
 
 ];

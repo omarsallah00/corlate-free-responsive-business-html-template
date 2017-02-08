@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-
+import 'hammerjs';
 import {AppComponent} from './app.component';
 import {TopBarComponent} from './components/top-bar/top-bar.component';
 import { HeaderBarComponent } from './components/header-bar/header-bar.component';
@@ -30,6 +30,8 @@ import { PortfolioDetailComponent } from './components/portfolio-detail/portfoli
 import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
 import { ReachUsComponent } from './components/reach-us/reach-us.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { FormulaireComponent } from './pages/formulaire/formulaire.component';
+import {MaterialModule} from "@angular/material";
 
 
 @NgModule({
@@ -59,13 +61,15 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
     PortfolioDetailComponent,
     BlogDetailComponent,
     ReachUsComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    FormulaireComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    MaterialModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
