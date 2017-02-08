@@ -32,6 +32,7 @@ import { ReachUsComponent } from './components/reach-us/reach-us.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { FormulaireComponent } from './pages/formulaire/formulaire.component';
 import {MaterialModule} from "@angular/material";
+import { CertificatNegatifComponent } from './components/certificat-negatif/certificat-negatif.component';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import {MaterialModule} from "@angular/material";
     BlogDetailComponent,
     ReachUsComponent,
     ContactFormComponent,
-    FormulaireComponent
+    FormulaireComponent,
+    CertificatNegatifComponent
   ],
   imports: [
     BrowserModule,
